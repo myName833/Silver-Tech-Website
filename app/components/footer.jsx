@@ -52,9 +52,22 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-[#778899] mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Silver Tech. All rights reserved.</p>
-        </div>
+          <div className="border-t border-[#778899] mt-8 pt-6 text-center text-sm text-gray-300">
+            <p className="mb-1">
+              &copy; {new Date().getFullYear()} Silver Tech. All rights reserved.
+            </p>
+            <p className="mb-0 text-gray-400">
+              Website developed by{' '}
+              <a
+                href="https://www.linkedin.com/in/johnny-hsieh-97aa5b329/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#778899] transition-colors duration-300 font-semibold cursor-pointer"
+              >
+                Johnny Hsieh
+              </a>
+            </p>
+          </div>
       </div>
     </footer>
   )
