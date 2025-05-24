@@ -20,7 +20,8 @@ export default function Hero() {
                 Start Your Own Chapter
               </a>
               <a
-                href="#volunteer"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeje610cikpjciQnokWOzILfsgo0-63diV5_NcGbZ8Zahj26g/viewform"
+                target="_blank"
                 className="bg-transparent border-2 border-[#F5F5F5] text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors duration-300"
               >
                 Become a Volunteer

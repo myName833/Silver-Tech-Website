@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <img src="/placeholder.svg?height=40&width=40" alt="Silver Tech Logo" className="h-10 w-10 mr-3" />
+              <img src="Logo.png" alt="Silver Tech Logo" className="h-10 w-10 mr-3" />
               <h1
                 className={`text-2xl font-bold transition-colors duration-300 ${scrolled ? "text-[#2F4F4F]" : "text-white"}`}
               >

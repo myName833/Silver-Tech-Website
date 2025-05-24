@@ -7,24 +7,24 @@ export default function PastEvents() {
       date: "January 15, 2024",
       time: "2:00 PM - 4:00 PM",
       location: "Community Center",
-      recording: "https://example.com/workshop-1",
-      thumbnail: "/placeholder.svg?height=200&width=300",
+      recording: "https://drive.google.com/drive/folders/1I-GoL2W3oMuRZLp1ZtbH6AVy5vIG9EXZ",
+      thumbnail: "events.jpg",
     },
     {
       title: "Internet Safety Seminar",
       date: "February 1, 2024",
       time: "10:00 AM - 12:00 PM",
       location: "Virtual Event",
-      recording: "https://example.com/workshop-2",
-      thumbnail: "/placeholder.svg?height=200&width=300",
+      recording: "https://drive.google.com/drive/folders/1I-GoL2W3oMuRZLp1ZtbH6AVy5vIG9EXZ",
+      thumbnail: "events 2.jpg",
     },
     {
       title: "Digital Communication Tools",
       date: "February 20, 2024",
       time: "1:00 PM - 3:00 PM",
       location: "Senior Center",
-      recording: "https://example.com/workshop-3",
-      thumbnail: "/placeholder.svg?height=200&width=300",
+      recording: "https://drive.google.com/drive/folders/1I-GoL2W3oMuRZLp1ZtbH6AVy5vIG9EXZ",
+      thumbnail: "events 1.JPG",
     },
   ]
 
@@ -42,7 +42,7 @@ export default function PastEvents() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <img src={event.thumbnail || "/placeholder.svg"} alt={event.title} className="w-full h-48 object-cover" />
+              <img src={event.thumbnail} alt={event.title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#2F4F4F] mb-4">{event.title}</h3>
                 <div className="space-y-2 text-[#708090]">
@@ -61,6 +61,7 @@ export default function PastEvents() {
                 </div>
                 <a
                   href={event.recording}
+                  target="_blank"
                   className="mt-6 inline-block bg-[#2F4F4F] text-white px-6 py-2 rounded-lg hover:bg-[#708090] transition-colors duration-300"
                 >
                   Watch Event
